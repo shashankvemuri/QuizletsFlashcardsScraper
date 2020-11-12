@@ -2,7 +2,8 @@ from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 
 # Set up quizlet scraper
-url = ("https://quizlet.com/546386510/tapia-vocab-unit-2-flash-cards/")
+## Example URL: https://quizlet.com/546386510/tapia-vocab-unit-2-flash-cards/
+url = input('Enter the Quizlet URL: ')
 req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 webpage = urlopen(req).read()
 soup = BeautifulSoup(webpage, "html.parser")

@@ -32,5 +32,5 @@ def getVocabulary(quizletURL):
         
     return result
 
-url = 'https://quizlet.com/464050154/tapia-vocab-unit-3-flash-cards/'
+url = input('Enter the quizlet URL: ')
 print(getVocabulary(url))
